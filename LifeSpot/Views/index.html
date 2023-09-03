@@ -24,7 +24,14 @@
 				LifeSpot — прямые трансляции с улиц<h1>
 	<p>Покажем, что происходит прямо сейчас</p>
 	<label class="find1 for="find1">Поиск:</label>
-	<input type="search" id="find1" name="q" class="find"/>
+	<!----<input type="search" id="find1" name="q" class="find" />-->
+	<input type="text" oninput=" 
+		let elements = document.getElementsByTagName('input');
+		// Получим первый элемент DOM в коллекции
+		let element = elements[0]; // Получим строковое значение
+		let elementText = element.value;
+		// Выведем во всплывающее окно 
+		alert(elementText)" size=50%>
 </header>
 		<!--<h5 class="find">Поиск</h5>-->
 		
