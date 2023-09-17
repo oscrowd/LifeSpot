@@ -5,7 +5,18 @@
 	<title>LifeSpot</title>
 	<link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
 	<!--<script> src = "../Static/JS/JavaScript.js" </script>-->
-	<script type = "text/javascript" src = "../Static/JS/JavaScript.js"></script>
+	<script type="text/javascript" src="../Static/JS/JavaScript.js"></script>
+	<!-- Внутренний скрипт с вызовами функций -->
+	<script>
+        // Проверка на возраст
+        //checkAge();
+		// сохранение сессии
+        handleSession()
+		// вывод данных сессии в консоль
+        sessionLog();
+		const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
 	</script>
 
 </head>
@@ -20,19 +31,14 @@
 <body>
 	<div class="bordered">
 		<header id="header-index">
-			<h1>
-				LifeSpot — прямые трансляции с улиц<h1>
-	<p>Покажем, что происходит прямо сейчас</p>
-	<label class="find1 for="find1">Поиск:</label>
-	<!----<input type="search" id="find1" name="q" class="find" />-->
-	<input type="text" oninput=" 
-		let elements = document.getElementsByTagName('input');
-		// Получим первый элемент DOM в коллекции
-		let element = elements[0]; // Получим строковое значение
-		let elementText = element.value;
-		// Выведем во всплывающее окно 
-		alert(elementText)" size=50%>
-</header>
+			<h1>LifeSpot - прямые трансляции с улиц</h1>
+			<p>Покажем, что происходит прямо сейчас</p>
+			<input type="text" oninput="// Функция объявлена через declaration     
+       
+      
+       // Вызов (функция в аргумент передаётся без круглых скобок)
+       filterContent( inputParseFunction )" size=50%>
+		</header>
 		<!--<h5 class="find">Поиск</h5>-->
 		
 		<!--

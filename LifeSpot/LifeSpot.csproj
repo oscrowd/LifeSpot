@@ -4,4 +4,8 @@
         <TargetFramework>net7.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Static\JS\JavaScript - Копировать.js" />
+    </ItemGroup>
+
 </Project>
