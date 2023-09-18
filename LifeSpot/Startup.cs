@@ -30,7 +30,7 @@ namespace LifeSpot
                 endpoints.MapGet("/", async context =>
                 {
                     var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "index.html");
-
+                    var viewText = await File.ReadAllTextAsync(viewPath);
                     // Загружаем шаблон страницы, вставляя в него элементы
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
                         .Replace("<!--SIDEBAR-->", sideBarHtml)
