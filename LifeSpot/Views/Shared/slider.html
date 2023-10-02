@@ -1,0 +1,20 @@
+﻿<div id="slider">
+    <!--<img src ="/IMG/spb.jpg" height="408" width="1000" alt="Картинка">-->
+    <img src="" height="408" width="1000">
+</div>
+
+<script>
+    var images = ["london.jpg", "ny.jpg", "spb.jpg"];
+    var slider = document.querySelector('#slider');
+    var img = slider.querySelector('img');
+    var i = 1;
+    img.src = '/Static/JPG/' + images[0]
+    window.setInterval(function (){
+        img.src = '/Static/JPG/' + images[i]
+        i++
+        if (i == images.length) {
+            i = 0;
+        }
+    }, 2000);
+</script>
+
